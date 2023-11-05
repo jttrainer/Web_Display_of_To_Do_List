@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Most Fabulous To-Do List</title>
+</head>
+<body>
+{% for item in to_do_list %}
+    Entered by: {{ item.who_added }} <br />
+    Assigned to: {{ item.who_assigned }}<br />
+    What item needs done: {{ item.to_do_name }}<br />
+    When item was added: {{ item.add_date }}<br />
+    When item needs to be completed: {{ item.due_date }}<br />
+    Item Completed?: {{ item.completed }}<br />
+    <br />
+
+{% endfor %}
+</body>
+</html>
+
